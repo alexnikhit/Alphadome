@@ -1,2 +1,3 @@
-# Alphadome
-Just a simple database project to learn about coding
+# Whitealex007
+Info:               Personal Pet Project.
+version:            1.0 (beta)
