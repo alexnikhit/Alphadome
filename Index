@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Chakra+Petch:700|Roboto:700');
+            
+            body {
+                background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,227,195,1) 51%, rgba(34,227,134,1) 99%, rgba(34,227,134,1) 100%);
+            }
+            
+            #box{
+                font-family: 'Chakra Petch', sans-serif;
+                position: inherit;
+                top: 20px;
+                text-align: center;
+                color: #39393A;
+            }
+            #center{
+                border-radius: 20px;
+                background-color: #F3F4F2;
+                position: relative;
+                top: 130px;
+                left: 490px;
+                width: 300px;
+                height: 300px;
+            }
+            
+            #form{
+                font-family: 'Roboto', sans-serif;
+                position: inherit;
+                top: 10px;
+                left: 70px;
+                
+            }
+            
+            .btn{
+                font-weight: bold;
+                background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,227,195,1) 51%, rgba(34,227,134,1) 99%, rgba(34,227,134,1) 100%);
+                color: #39393A;
+                border-radius: 10px;
+                width: 150px;
+                height: 30px;
+                padding: 0;
+                border: none;
+            }
+            
+            .btn:hover {
+                width: 155px;
+                height: 32px;
+            }
+            
+            .btn:active {
+                background-color:#39393A;
+                color: #ffffff;
+                border:none;
+            }
+            
+            #creator{
+                font-family: 'Chakra Petch', sans-serif;
+                font-size: 10px;
+                font-stretch: extra-condensed;
+                position: relative;
+                top:355px;
+                padding: 0;
+                margin: none;
+                color: aliceblue;
+                font-weight: lighter;
+                text-align: center;
+            }
+            
+            
+        
+        </style>
+    </head>
+    <body>
+        
+        <div id="center">
+            <div id="box">
+                <h2>INDEX</h2><br>
+            </div>
+            <div id="form" style="text-align: center">
+                <form>
+                    <table>
+                        <tr>
+                            <td><button class="btn" type="button" onclick="onclick=location.href='http://localhost/Antidote-Dash/Dash.html'"name="adcustomer">Add Customers</button><br></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" type="button" name="vwcustomer">View Customers</button><br></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" type="button" name="addOrders">Add Orders</button> </td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" type="button" name="cancelOrders">Cancel Orders</button> </td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" type="button" name="viewOrders">Active Orders</button> </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>    
+        </div>
+        <div id="creator">
+        <p>CREATED BY @whitealex007 <br> version 1.0 beta<p>
+        </div>
+    </body>
+</html>
