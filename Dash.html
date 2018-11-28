@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="server.js"></script>
+        <style>
+            #button{
+                position: relative;
+                top: 35px;
+                left: 100px;
+            }
+            #center{
+                border-radius: 20px;
+                background-color: #C8C9C7;
+                position: relative;
+                top: 130px;
+                left: 490px;
+                width: 300px;
+                height: 400px;
+            }
+            
+            #form{
+                font-family: 'Roboto', sans-serif;
+                position: inherit;
+                top: 40px;
+                left: 20px;
+                
+            }
+            
+            .iptbox{
+                width: 130px;
+                border: none;
+                border-radius: 5px;
+                height: 20px;
+                color: #C8C9C7;
+                padding: 2px;
+            }
+            
+            .btn{
+                font-weight: bold;
+                background-color:#8C93A8;
+                color: #39393A;
+                border-radius: 10px;
+                width: 100px;
+                height: 30px;
+                padding: 0;
+                border-color: #39393A;
+                border-width: medium;
+            }
+            
+            .btn:hover {
+                width: 105px;
+                height: 32px;
+            }
+            
+            .btn:active {
+                background-color:#39393A;
+                color: #ffffff;
+                border-color: #ffffff;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="center">
+            <div id="form">
+                <form>
+                    <table>
+                        <tr style="height: 10px;">
+                            <td><h5>First Name:</h5></td><td><input class="iptbox" type="text" name="fName"></td>
+                        </tr>
+                        <tr style="height: 10px;">
+                            <td><h5>Last Name:</h5></td><td><input class="iptbox" type="text" name="lName"></td>
+                        </tr>
+                        <tr>
+                            <td><h5>Mobile Number:</h5></td><td><input class="iptbox" type="text" name="mNum"></td>
+                        </tr>
+                        <tr>
+                            <td><h5>Email Address:</h5></td><td><input class="iptbox" type="text" name="eMail"></td>
+                        </tr>
+                        <tr>
+                            <td><h5>Delivery Address: &nbsp;</h5></td><td><input class="iptbox" type="text" name="dAddress"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+                <div id="button">
+                        <button type="button" name="submit" class="btn">Submit</button>
+                </div>
+        </div>
+    </body>
+</html>
