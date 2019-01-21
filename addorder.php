@@ -48,6 +48,13 @@ $result = mysql_query($query);
                 border: none;
                 background-color: transparent;
             }
+            
+            input {
+                font-size: 14px;
+                border-radius: 5px;
+                border: none;
+                height: 25px;
+            }
         </style>
     </head>
     <body>
@@ -69,7 +76,7 @@ $result = mysql_query($query);
                     </td>
                     <td>
                         <input type="text" name="fName" value="<?php while($row = mysql_fetch_array($result)) {
-                        echo $row['firstName'];?>">
+                        echo $row['firstName'];?>"readonly>
                     </td>
                 </tr>
                 <tr>
@@ -77,7 +84,7 @@ $result = mysql_query($query);
                         Last Name
                     </td>
                     <td> 
-                        <input type="text" name="lName" value="<?php echo $row['lastName'];?>">
+                        <input type="text" name="lName" value="<?php echo $row['lastName'];?>"readonly>
                     </td>
                 </tr>
                 <tr>
@@ -85,7 +92,7 @@ $result = mysql_query($query);
                         Mobile Number
                     </td>
                     <td> 
-                        <input type="text" name="mNum" value="<?php echo $row['phoneNumber'];?>">
+                        <input type="text" name="mNum" value="<?php echo $row['phoneNumber'];?>"readonly>
                     </td>
                 </tr>
                 <tr>
@@ -93,7 +100,7 @@ $result = mysql_query($query);
                         Email ID
                     </td>
                     <td> 
-                        <input type="text" name="eMail" value="<?php echo $row['eMail'];?>">
+                        <input type="text" name="eMail" value="<?php echo $row['eMail'];?>" readonly>
                     </td>
                 </tr>
                 <tr>
@@ -112,11 +119,7 @@ $result = mysql_query($query);
                         <input type="text" name="id" value="<?php echo $row['id'];}?>" readonly>
                     </td>
                 </tr>
-                <div id="btn">
-                        <button type="submit" value="submit" name="submit">
-                            Update
-                        </button>
-                </div>
+               
                     </form>
                 </table>
             </div>
