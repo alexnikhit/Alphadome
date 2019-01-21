@@ -8,12 +8,12 @@ if(isset($_POST['submit'])) {
      $phoneNumber = $_POST['mNum'];
      $eMail = $_POST['eMail'];
      $delAddress  = $_POST['dAddress'];
-     $area51 = $_POST['area51'];
+     $id = $_POST['id'];
 
-     $query = "INSERT INTO customer (firstName, lastName, phoneNumber, eMail, delAddress, area)
-               VALUES('$firstName', '$lastName' , '$phoneNumber' , '$eMail', '$delAddress', '$area51')";
+     $query = "UPDATE customer 
+                SET firstName= '$firstName', lastName='$lastName', phoneNumber ='$phoneNumber', eMail=            '$eMail', delAddress ='$delAddress' WHERE id = $id";
      mysql_query($query);
-     header("Location:http://localhost/Antidote-Dash/successul.html");
+     header("Location:http://localhost/Antidote-Dash/successul2.html");
 };
 
     
